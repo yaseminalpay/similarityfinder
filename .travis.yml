@@ -1,0 +1,17 @@
+language: java
+jdk:
+- openjdk8
+
+before_install:
+- chmod +x gradlew
+
+stages:
+- unitTests
+
+unitTests:
+  stage: unitTests
+  script:
+  - ./gradlew clean test
+  - echo "Unit test stage completed"
+  only:
+  - dev
