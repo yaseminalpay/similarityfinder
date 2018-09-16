@@ -19,6 +19,11 @@ public class SimilarityFinderService {
     private final String WORD_SPLITTER = "\\s+";
     private final int LEVENSHTEIN_THRESHOLD = 1;
 
+    /**
+     * Finds similar words and frequency in notebook entry of a given keyword
+     * @param input @{@link SimilarityInput} - keyword and notebook entry
+     * @return @{@link SimilarityResult} - frequency and similar words
+     */
     public SimilarityResult findSimilarities(SimilarityInput input) {
         final String keyword = input.getKeyword();
         final String[] words = input.getNotebookEntry().trim().split(WORD_SPLITTER);
