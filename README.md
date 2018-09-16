@@ -2,6 +2,9 @@ Similarity Finder API
 
 Similarity finder API finds similar words and frequency of a given keyword in a notebook entry.
 
+![Build Status](https://travis-ci.com/yaseminalpay/similarityfinder.svg?token=Wye2N9z2fPSnewxFpbT6&branch=dev)
+
+
 ## Definition of Done
 - An endpoint is implemented for getting similarities
 - Unit tests are implemented

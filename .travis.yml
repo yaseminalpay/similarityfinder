@@ -13,5 +13,4 @@ unitTests:
   script:
   - ./gradlew clean test
   - echo "Unit test stage completed"
-  only:
-  - dev
+
